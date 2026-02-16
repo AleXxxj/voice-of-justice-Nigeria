@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice of Justice Nigeria - Home</title>
+    
+    <!-- CSS Files (already uploaded) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome for icons (optional but nice) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== HEADER / NAVIGATION ===== -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <div class="logo-text">VOICE OF JUSTICE<br><span>NIGERIA</span></div>
+        </div>
+        
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="patrick-case.html">Patrick Case</a>
+            <a href="karowi-case.html">Karowi Bala</a>
+            <a href="court-documents.html">Documents</a>
+            <a href="media-hub.html">Media</a>
+            <a href="petition.html">Petition</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== HERO SECTION WITH VIDEO BACKGROUND ===== -->
+<section class="hero">
+    <div class="hero-video-bg">
+        <!-- If you have a video file, add it here -->
+        <!-- <video autoplay muted loop><source src="assets/videos/justice-bg.mp4"></video> -->
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="hero-content">
+        <div class="floating-badge animate-float">
+            <span class="pulse"></span>
+            🚨 BREAKING: BODMAS KEMEPADEI DECLARED WANTED BY POLICE
+        </div>
+        
+        <h1 class="glitch" data-text="VOICE OF JUSTICE NIGERIA">
+            VOICE OF JUSTICE <span class="gold-text">NIGERIA</span>
+        </h1>
+        
+        <p class="hero-subtitle">Speaking for the Voiceless • Demanding Accountability • Pursuing Truth</p>
+        
+        <!-- YOUR VIRAL STATS FROM FACEBOOK -->
+        <div class="hero-stats">
+            <div class="stat-item animate-fade-in-up delay-1">
+                <span class="stat-number">470K+</span>
+                <span class="stat-label">FACEBOOK VIEWS</span>
+            </div>
+            <div class="stat-item animate-fade-in-up delay-2">
+                <span class="stat-number">174K+</span>
+                <span class="stat-label">TIKTOK VIEWS</span>
+            </div>
+            <div class="stat-item animate-fade-in-up delay-3">
+                <span class="stat-number">26K+</span>
+                <span class="stat-label">FACEBOOK LIKES</span>
+            </div>
+            <div class="stat-item animate-fade-in-up delay-4">
+                <span class="stat-number">1.5K+</span>
+                <span class="stat-label">COMMENTS</span>
+            </div>
+            <div class="stat-item animate-fade-in-up delay-5">
+                <span class="stat-number">2.6K+</span>
+                <span class="stat-label">SHARES</span>
+            </div>
+        </div>
+        
+        <!-- CALL TO ACTION BUTTONS -->
+        <div class="hero-cta">
+            <a href="patrick-case.html" class="btn-primary">
+                <i class="fas fa-exclamation-triangle"></i> URGENT: PATRICK CASE
+            </a>
+            <a href="karowi-case.html" class="btn-secondary">
+                <i class="fas fa-search"></i> MISSING: KAROWI BALA
+            </a>
+        </div>
+        
+        <!-- SCROLL INDICATOR -->
+        <div class="scroll-indicator">
+            <span>Scroll for Justice</span>
+            <div class="mouse"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FEATURED CASES SECTION ===== -->
+<section class="featured-cases">
+    <div class="container">
+        <div class="section-header">
+            <h2>ACTIVE <span class="gold-text">CASES</span></h2>
+            <div class="header-line"></div>
+            <p>Justice delayed is justice denied</p>
+        </div>
+        
+        <!-- 3D CAROUSEL -->
+        <div class="cases-3d-carousel">
+            <div class="carousel-container" id="caseCarousel">
+                
+                <!-- CASE 1: PATRICK (URGENT) -->
+                <div class="carousel-card" data-position="0">
+                    <div class="card-glow"></div>
+                    <div class="case-ribbon">🚨 URGENT</div>
+                    <div class="case-image" style="background-color: #8B0000; background-image: linear-gradient(45deg, #8B0000, #B22222);">
+                        <div class="case-overlay"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-date">JANUARY 15-28, 2026</span>
+                        <h3>PATRICK PERESOUDEI</h3>
+                        <p class="case-age">24 years • Victim</p>
+                        <div class="case-status wanted">
+                            <span class="status-dot"></span> BODMAS WANTED BY POLICE
+                        </div>
+                        <p class="case-desc">Died after alleged assault and detention. Brother witnessed brutal torture.</p>
+                        <div class="case-progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                            <span>Police Investigation Active</span>
+                        </div>
+                        <a href="patrick-case.html" class="case-link">VIEW FULL CASE →</a>
+                    </div>
+                </div>
+                
+                <!-- CASE 2: KAROWI BALA (MISSING) -->
+                <div class="carousel-card" data-position="1">
+                    <div class="card-glow"></div>
+                    <div class="case-ribbon missing">⚠️ MISSING</div>
+                    <div class="case-image" style="background-color: #0A1F44; background-image: linear-gradient(135deg, #0A1F44, #1A3A6E);">
+                        <div class="case-overlay"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-date">JULY 11, 2024</span>
+                        <h3>BALAMENE JONA BINIS</h3>
+                        <p class="case-age">"Karowi Bala" • 46 years • Father of 9</p>
+                        <div class="case-status missing">
+                            <span class="status-dot"></span> MISSING 580+ DAYS
+                        </div>
+                        <p class="case-desc">Chief Priest taken from home. Eyewitness PA gave full testimony.</p>
+                        <div class="case-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                            <span>Court Case Active (FHC Abuja)</span>
+                        </div>
+                        <a href="karowi-case.html" class="case-link">VIEW FULL CASE →</a>
+                    </div>
+                </div>
+                
+                <!-- CASE 3: BODMAS (WANTED) -->
+                <div class="carousel-card" data-position="2">
+                    <div class="card-glow"></div>
+                    <div class="case-ribbon wanted">🚔 WANTED</div>
+                    <div class="case-image" style="background-color: #333; background-image: linear-gradient(45deg, #333, #555);">
+                        <div class="case-overlay"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-date">FEBRUARY 2026</span>
+                        <h3>BODMAS KEMEPADEI</h3>
+                        <p class="case-age">Person of Interest</p>
+                        <div class="case-status wanted">
+                            <span class="status-dot"></span> DECLARED WANTED
+                        </div>
+                        <p class="case-desc">Linked to Patrick death and Karowi Bala disappearance. At large.</p>
+                        <div class="case-progress">
+                            <div class="progress-bar" style="width: 50%"></div>
+                            <span>Intelligence追踪 Active</span>
+                        </div>
+                        <a href="bodmas-case.html" class="case-link">VIEW PROFILE →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CAROUSEL CONTROLS -->
+            <div class="carousel-controls">
+                <button class="prev" onclick="moveCarousel('prev')"><i class="fas fa-chevron-left"></i></button>
+                <button class="next" onclick="moveCarousel('next')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WITNESS TESTIMONY SNEAK PEEK ===== -->
+<section class="witness-spotlight" style="margin: 50px 0;">
+    <div class="container">
+        <div class="spotlight-header">
+            <h3>THE WITNESS SPEAKS: <span class="gold-text">EMMANUEL ABAROWE</span></h3>
+            <p>PA to Karowi Bala • Direct Eyewitness to July 11, 2024 Abduction</p>
+        </div>
+        <div class="testimony-card">
+            <div class="quote-mark">"</div>
+            <p class="testimony-text">"Bodmas called me on phone, asked me 'how you dey?' I said I dey fine. He say 'I want come meet your master make am do spiritual work for me.' I tell am make I inform my master first. Later that evening, Bodmas come with Tantita boys, 5 civil defence, 2 military officers... They surround the whole place. My master talk say make him pray first because e get pregnant wife. Bodmas vex say 'Who my master be to reject Tompolo invite?' Then he give order: 'Carry am with force!'"</p>
+            <div class="testimony-meta">
+                <span><i class="fas fa-video"></i> Full video testimony available</span>
+                <span><i class="fas fa-gavel"></i> Part of court filing</span>
+            </div>
+            <a href="karowi-case.html" class="btn-outline" style="margin-top: 20px; display: inline-block;">READ FULL TESTIMONY →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECOND WITNESS ===== -->
+<section class="witness-spotlight" style="margin: 50px 0; background: var(--gradient-secondary);">
+    <div class="container">
+        <div class="spotlight-header">
+            <h3>THE WITNESS SPEAKS: <span style="color: white;">DESTINY PERESOUDEI</span></h3>
+            <p>Brother of Patrick • Eyewitness to January 15, 2026 Attack</p>
+        </div>
+        <div class="testimony-card" style="background: rgba(255,255,255,0.15);">
+            <div class="quote-mark">"</div>
+            <p class="testimony-text">"At 5:44am, someone knock our gate. My brother look outside and say 'that's Bodmas vehicle.' Bodmas come down, start slapping my brother. Four civil defence come down from Tundra, start harassing us. They tie our hands, tie our legs, beat us with 2x3 plank for 3 hours. They broke my head. They broke my brother head. On January 20, they take my brother out, bring am back - he no fit talk, no fit raise hand, no fit raise leg. By January 28, my brother stop breathing."</p>
+            <div class="testimony-meta">
+                <span><i class="fas fa-video"></i> Full video testimony available</span>
+                <span><i class="fas fa-police"></i> Police case active</span>
+            </div>
+            <a href="patrick-case.html" class="btn-secondary" style="margin-top: 20px; display: inline-block; border-color: white; color: white;">READ FULL TESTIMONY →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAMILY PLEA SECTION ===== -->
+<section class="family-testimony" style="margin: 50px 0;">
+    <div class="container">
+        <h3 style="text-align: center; margin-bottom: 40px;">THE FAMILIES <span class="gold-text">CRY FOR JUSTICE</span></h3>
+        
+        <div class="testimony-slider" id="familySlider">
+            <!-- Slide 1: Fethi Bala (Wife of Karowi) -->
+            <div class="testimony-slide active">
+                <div class="speaker">FETHI BALA — WIFE OF KAROWI BALA</div>
+                <p class="quote">"They came on the 11th of July towards evening time. They said Tompolo sent Bodmas to kidnap my husband. We don't know where he is now. We don't have his phone number. For a large family like this, 9 children, we don't know how to cope. We are sick. Last week we were in hospital. The children need to go to school but there is nothing. I begged them, I begged, bring my husband back."</p>
+            </div>
+            
+            <!-- Slide 2: Sister of Karowi -->
+            <div class="testimony-slide">
+                <div class="speaker">SISTER OF KAROWI BALA</div>
+                <p class="quote">"Ever since Tompolo sent his boys to come and kidnap my uncle, we don't know his whereabouts. Even the governor of this state is aware but is not doing anything. We are suffering. We and the children, we are suffering. We are not going to school. He was the only one taking care of us. Please, Donald Trump, help us. Help us and ask Tompolo to release my uncle from his illegal cell."</p>
+            </div>
+            
+            <!-- Slide 3: Destiny (Brother of Patrick) -->
+            <div class="testimony-slide">
+                <div class="speaker">DESTINY PERESOUDEI — BROTHER OF PATRICK</div>
+                <p class="quote">"They threw my brother to me. He couldn't talk. He couldn't raise his hand. He couldn't raise his leg. I tried to arrange his body, balance him, rest him on my chest. That was January 20th. By January 28th, he stopped breathing. My brother is gone. But we want justice. Bodmas must be arrested. The police say he is wanted, but where is he?"</p>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div style="text-align: center; margin-top: 30px;">
+            <button onclick="slideTestimony(-1)" style="background: none; border: 2px solid var(--secondary); color: var(--primary); padding: 10px 20px; margin: 0 10px; border-radius: 30px; cursor: pointer;">← Prev</button>
+            <button onclick="slideTestimony(1)" style="background: var(--secondary); border: none; color: white; padding: 10px 20px; margin: 0 10px; border-radius: 30px; cursor: pointer;">Next →</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BREAKING NEWS UPDATE ===== -->
+<section class="news-feed" style="margin: 50px 0; background: var(--light); padding: 60px 0;">
+    <div class="container">
+        <div class="section-header">
+            <h2>LIVE <span class="gold-text">UPDATES</span></h2>
+            <div class="header-line"></div>
+        </div>
+        
+        <div class="feed-container">
+            <!-- Update 1: Most Recent -->
+            <div class="feed-item urgent">
+                <div class="feed-time">FEB 7, 2026 • 5:00 PM</div>
+                <div class="feed-content">
+                    <h4>⏰ 48-HOUR ULTIMATUM EXPIRES</h4>
+                    <p>Bodmas Kemepadei has not surrendered. Voice of Justice Nigeria demands immediate police action.</p>
+                </div>
+            </div>
+            
+            <!-- Update 2: Police Statement -->
+            <div class="feed-item official">
+                <div class="feed-time">FEB 6, 2026</div>
+                <div class="feed-content">
+                    <h4>📢 POLICE: BODMAS DECLARED WANTED</h4>
+                    <p>Bayelsa Police Command confirms Bodmas Kemepadei at large, intelligence activated to track him. NSCDC personnel cooperating with investigation.</p>
+                    <span class="source">Source: Police Statement</span>
+                </div>
+            </div>
+            
+            <!-- Update 3: Your Viral Video -->
+            <div class="feed-item viral">
+                <div class="feed-time">FEB 3, 2026</div>
+                <div class="feed-content">
+                    <h4>🔥 VOICE OF JUSTICE VIDEO GOES VIRAL</h4>
+                    <p>"Bodmas will go to prison" - Cchristian D's statement reaches 470K views on Facebook, 174K on TikTok with 26K+ likes and 1.5K+ comments.</p>
+                </div>
+            </div>
+            
+            <!-- Update 4: Witness Contact -->
+            <div class="feed-item">
+                <div class="feed-time">FEB 4, 2026</div>
+                <div class="feed-content">
+                    <h4>👤 KEY WITNESS COMES FORWARD</h4>
+                    <p>Emmanuel Abarowe (PA to Karowi Bala) contacts Voice of Justice Nigeria after seeing advocacy videos. Provides full testimony of July 11 abduction.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="updates.html" class="btn-outline">VIEW ALL UPDATES →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CALL TO ACTION - PETITION ===== -->
+<section class="petition-hub" style="margin: 50px 0;">
+    <div class="container">
+        <div class="petition-split">
+            <div class="petition-left" style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-xl);">
+                <h3 style="color: var(--primary);">SIGN THE <span class="gold-text">PETITION</span></h3>
+                <p class="petition-lead">Demand justice for Patrick Peresoudei and Balamene Jona Binis</p>
+                
+                <div class="petition-progress">
+                    <div class="progress-label">
+                        <span>25,000 signatures needed</span>
+                        <span>12,847 signed</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-fill" style="width: 51%"></div>
+                    </div>
+                </div>
+                
+                <div class="petition-text">
+                    <h4>WE DEMAND:</h4>
+                    <ul>
+                        <li>✓ Immediate arrest of Bodmas Kemepadei (WANTED by police)</li>
+                        <li>✓ Full investigation into Patrick Peresoudei's death</li>
+                        <li>✓ Disclosure of Balamene Jona Binis' whereabouts</li>
+                        <li>✓ Investigation into alleged private detention facilities</li>
+                        <li>✓ Prosecution of all involved parties if evidence found</li>
+                    </ul>
+                </div>
+                
+                <a href="petition.html" class="btn-primary btn-block" style="text-align: center;">✍️ SIGN PETITION NOW</a>
+            </div>
+            
+            <div class="petition-right" style="background: var(--gradient-primary); padding: 40px; border-radius: 20px; color: white;">
+                <h3 style="color: white; margin-bottom: 30px;">SUPPORT THE CAUSE</h3>
+                
+                <div class="support-options" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="support-card" style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px; text-align: center;">
+                        <div class="support-icon" style="font-size: 2rem;">⚖️</div>
+                        <h4 style="color: white;">LEGAL SUPPORT</h4>
+                        <p style="font-size: 0.9rem;">Volunteer your legal expertise</p>
+                        <a href="contact.html" class="btn-outline-small" style="border-color: var(--secondary); color: white;">REGISTER</a>
+                    </div>
+                    
+                    <div class="support-card" style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px; text-align: center;">
+                        <div class="support-icon" style="font-size: 2rem;">💰</div>
+                        <h4 style="color: white;">FAMILY SUPPORT</h4>
+                        <p style="font-size: 0.9rem;">Donate to Karowi Bala's 9 children & Patrick's family</p>
+                        <a href="donate.html" class="btn-outline-small" style="border-color: var(--secondary); color: white;">DONATE</a>
+                    </div>
+                    
+                    <div class="support-card" style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px; text-align: center;">
+                        <div class="support-icon" style="font-size: 2rem;">📢</div>
+                        <h4 style="color: white;">AMPLIFY</h4>
+                        <p style="font-size: 0.9rem;">Share cases on social media</p>
+                        <div class="social-share">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="support-card" style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px; text-align: center;">
+                        <div class="support-icon" style="font-size: 2rem;">📝</div>
+                        <h4 style="color: white;">SUBMIT EVIDENCE</h4>
+                        <p style="font-size: 0.9rem;">Securely upload information</p>
+                        <a href="contact.html" class="btn-outline-small" style="border-color: var(--secondary); color: white;">UPLOAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="premium-footer">
+    <div class="footer-grid">
+        <div class="footer-about">
+            <h3>VOICE OF JUSTICE <span class="gold-text">NIGERIA</span></h3>
+            <p>Speaking for the voiceless. Demanding accountability. Pursuing truth.</p>
+            <p>Led by Prince Abisoye Emmanuel</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <h4>EXPLORE</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="patrick-case.html">Patrick Case</a></li>
+                <li><a href="karowi-case.html">Karowi Bala Case</a></li>
+                <li><a href="court-documents.html">Court Documents</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            <h4>ACTION</h4>
+            <ul>
+                <li><a href="petition.html">Sign Petition</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Report a Case</a></li>
+                <li><a href="media-hub.html">Media Hub</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-legal">
+            <h4>LEGAL</h4>
+            <p>All accused persons are presumed innocent until proven otherwise in a court of law. Information presented is based on testimonies, court filings, and public records.</p>
+            <a href="legal-disclaimer.html">Full Disclaimer</a>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 Voice of Justice Nigeria. All rights reserved. | cchristiand.org</p>
+        <p>Justice delayed is justice denied.</p>
+    </div>
+</footer>
+
+<!-- ===== JAVASCRIPT FOR INTERACTIVITY ===== -->
+<script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+
+    // Carousel functionality
+    let positions = [0, 1, 2, 3, 4];
+    let currentPosition = 0;
+    
+    function moveCarousel(direction) {
+        const cards = document.querySelectorAll('.carousel-card');
+        
+        if (direction === 'next') {
+            currentPosition = (currentPosition + 1) % cards.length;
+        } else {
+            currentPosition = (currentPosition - 1 + cards.length) % cards.length;
+        }
+        
+        cards.forEach((card, index) => {
+            let newPos = (index - currentPosition + cards.length) % cards.length;
+            card.setAttribute('data-position', newPos);
+        });
+    }
+
+    // Testimony slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimony-slide');
+    
+    function slideTestimony(direction) {
+        slides[currentSlide].classList.remove('active');
+        
+        if (direction === 1) {
+            currentSlide = (currentSlide + 1) % slides.length;
+        } else {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        }
+        
+        slides[currentSlide].classList.add('active');
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Animate elements on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    function checkReveal() {
+        revealElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementTop < windowHeight - 100) {
+                element.classList.add('active');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', checkReveal);
+    checkReveal();
+</script>
+
+</body>
+</html>
