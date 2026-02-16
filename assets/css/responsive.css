@@ -1,0 +1,366 @@
+/* ============================================
+   VOICE OF JUSTICE NIGERIA - RESPONSIVE DESIGN
+   ============================================ */
+
+/* Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Medium Devices (Tablets, 992px to 1199px) */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-stats {
+    gap: 30px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .carousel-card {
+    width: 300px;
+    height: 450px;
+    margin-left: -150px;
+    margin-top: -225px;
+  }
+}
+
+/* Small Devices (Landscape Phones, 768px to 991px) */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex: 1 1 200px;
+  }
+  
+  .carousel-card {
+    width: 280px;
+    height: 420px;
+    margin-left: -140px;
+    margin-top: -210px;
+  }
+  
+  .carousel-card[data-position="1"] {
+    transform: translate3d(300px, 0, -200px) scale(0.9);
+  }
+  
+  .carousel-card[data-position="2"] {
+    transform: translate3d(-300px, 0, -200px) scale(0.9);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .timeline-track::before {
+    left: 80px;
+  }
+  
+  .node-marker {
+    min-width: 80px;
+  }
+  
+  .mosaic-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .mosaic-item.main {
+    grid-column: span 3;
+  }
+}
+
+/* Extra Small Devices (Portrait Phones, 576px to 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: var(--primary);
+    flex-direction: column;
+    padding: 40px;
+    transition: var(--transition-fast);
+    z-index: 999;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .carousel-card {
+    width: 250px;
+    height: 400px;
+    margin-left: -125px;
+    margin-top: -200px;
+  }
+  
+  .carousel-card[data-position="1"] {
+    transform: translate3d(200px, 0, -200px) scale(0.9);
+  }
+  
+  .carousel-card[data-position="2"] {
+    transform: translate3d(-200px, 0, -200px) scale(0.9);
+  }
+  
+  .split-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .floating-quote {
+    right: 10px;
+    left: 10px;
+    max-width: none;
+  }
+  
+  .poster-content {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .timeline-track::before {
+    display: none;
+  }
+  
+  .timeline-node {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .node-marker {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .node-marker::after {
+    left: 0;
+    right: auto;
+  }
+  
+  .mosaic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mosaic-item.main {
+    grid-column: span 2;
+  }
+  
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .petition-split {
+    grid-template-columns: 1fr;
+  }
+  
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-links h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Ultra Small Devices (Small Phones, 375px and below) */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .glitch {
+    font-size: 2.5rem;
+  }
+  
+  .floating-badge {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+  
+  .carousel-card {
+    width: 220px;
+    height: 350px;
+    margin-left: -110px;
+    margin-top: -175px;
+  }
+  
+  .carousel-card[data-position="1"] {
+    transform: translate3d(150px, 0, -200px) scale(0.9);
+  }
+  
+  .carousel-card[data-position="2"] {
+    transform: translate3d(-150px, 0, -200px) scale(0.9);
+  }
+  
+  .case-content {
+    padding: 15px;
+  }
+  
+  .case-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .mosaic-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mosaic-item.main {
+    grid-column: span 1;
+  }
+  
+  .support-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .hero-video-bg,
+  .carousel-controls,
+  .scroll-indicator,
+  .menu-toggle,
+  .nav-menu,
+  .btn,
+  .footer-bottom {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #1a1a1a;
+    --light-gray: #333;
+    --white: #121212;
+    --dark: #f5f5f5;
+    --gray: #ccc;
+  }
+  
+  body {
+    color: var(--dark);
+  }
+  
+  .case-content,
+  .node-content,
+  .document-card,
+  .media-card,
+  .feed-item,
+  .portal-form,
+  .info-card {
+    background: #1e1e1e;
+    color: var(--dark);
+  }
+  
+  input,
+  textarea,
+  select {
+    background: #2a2a2a;
+    color: var(--dark);
+    border-color: #444;
+  }
+}
