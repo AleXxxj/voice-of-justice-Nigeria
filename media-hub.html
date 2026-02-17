@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Hub - Video Testimonies - Voice of Justice Nigeria</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <div class="logo-text">VOICE OF JUSTICE<br><span>NIGERIA</span></div>
+        </div>
+        
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="patrick-case.html">Patrick Case</a>
+            <a href="karowi-case.html">Karowi Bala</a>
+            <a href="court-documents.html">Documents</a>
+            <a href="media-hub.html" class="active">Media</a>
+            <a href="petition.html">Petition</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section style="background: var(--gradient-primary); padding: 120px 0 60px; color: white; text-align: center;">
+    <div class="container">
+        <h1 style="color: white; font-size: 3.5rem;">MEDIA <span class="gold-text">HUB</span></h1>
+        <p style="font-size: 1.3rem; max-width: 700px; margin: 20px auto;">Video Testimonies • Advocacy Content • Family Pleas</p>
+    </div>
+</section>
+
+<!-- ===== VIRAL STATS BANNER ===== -->
+<section style="padding: 30px 0;">
+    <div class="container">
+        <div style="background: var(--gradient-secondary); padding: 30px; border-radius: 20px; color: white; text-align: center;">
+            <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
+                <div>
+                    <span style="font-size: 3rem; font-weight: 800;">470K+</span>
+                    <p>FACEBOOK VIEWS</p>
+                </div>
+                <div>
+                    <span style="font-size: 3rem; font-weight: 800;">174K+</span>
+                    <p>TIKTOK VIEWS</p>
+                </div>
+                <div>
+                    <span style="font-size: 3rem; font-weight: 800;">26K+</span>
+                    <p>LIKES</p>
+                </div>
+                <div>
+                    <span style="font-size: 3rem; font-weight: 800;">1.5K+</span>
+                    <p>COMMENTS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== MEDIA FILTERS ===== -->
+<section class="media-hub" style="padding: 40px 0;">
+    <div class="container">
+        <div class="media-filters">
+            <button class="filter active" onclick="filterMedia('all')">ALL VIDEOS</button>
+            <button class="filter" onclick="filterMedia('testimony')">TESTIMONIES</button>
+            <button class="filter" onclick="filterMedia('family')">FAMILY PLEAS</button>
+            <button class="filter" onclick="filterMedia('advocacy')">ADVOCACY</button>
+            <button class="filter" onclick="filterMedia('breaking')">BREAKING NEWS</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== MEDIA GRID ===== -->
+<section style="padding: 20px 0 60px;">
+    <div class="container">
+        <div class="media-grid" id="mediaGrid">
+            
+            <!-- VIDEO 1: Bodmas 48 Hours Ultimatum (Advocacy/Breaking) -->
+            <div class="media-card" data-category="advocacy breaking">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #8B0000, #B22222); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">2:34</div>
+                    <div class="views-badge">470K views</div>
+                    <div style="position: absolute; bottom: 10px; left: 10px; color: white; font-weight: bold; text-shadow: 1px 1px 2px black;">🔥 VIRAL</div>
+                </div>
+                <div class="card-info">
+                    <h4>BODMAS: 48 HOURS ULTIMATUM</h4>
+                    <p>Prince Abisoye Emmanuel demands Bodmas surrender • Feb 2026</p>
+                    <div class="stats">
+                        <span><i class="fas fa-heart" style="color: #ff4444;"></i> 26K likes</span>
+                        <span><i class="fas fa-comment"></i> 1.5K comments</span>
+                        <span><i class="fas fa-share"></i> 2.6K shares</span>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: var(--gray);">"Bodmas will go to prison. He will make sure that he escorts him to prison."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 2: Emmanuel Abarowe Full Testimony (Testimony) -->
+            <div class="media-card" data-category="testimony">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #0A1F44, #1A3A6E); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">15:42</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background: var(--accent); color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold;">EXCLUSIVE</div>
+                </div>
+                <div class="card-info">
+                    <h4>EMMANUEL ABAROWE: FULL TESTIMONY</h4>
+                    <p>PA to Karowi Bala • Eyewitness to July 11, 2024 abduction</p>
+                    <p style="margin-top: 10px; font-style: italic;">"Bodmas called me on phone... he came with 5 civil defence, 2 military officers... dem carry my master with force..."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 3: Fethi Bala (Wife of Karowi) - Family -->
+            <div class="media-card" data-category="family">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #4A2C2C, #6B4A4A); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">8:21</div>
+                </div>
+                <div class="card-info">
+                    <h4>FETHI BALA: "WHERE IS MY HUSBAND?"</h4>
+                    <p>Wife of missing Karowi Bala • Mother of 9 children</p>
+                    <p style="margin-top: 10px; font-style: italic;">"They came on the 11th of July... they said Tompolo sent Bodmas to kidnap my husband. We don't know where he is now."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 4: Destiny Peresoudei Full Testimony (Testimony) -->
+            <div class="media-card" data-category="testimony">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #8B0000, #660000); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">22:15</div>
+                </div>
+                <div class="card-info">
+                    <h4>DESTINY PERESOUDEI: PATRICK'S LAST DAYS</h4>
+                    <p>Brother of Patrick • Eyewitness to January 15, 2026 attack</p>
+                    <p style="margin-top: 10px; font-style: italic;">"They beat us with 2x3 plank for 3 hours... they broke my head... they broke my brother head... on January 20, they threw my brother to me... he couldn't talk..."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 5: Cchristian D - "Bodmas Will Go to Prison" (Advocacy) -->
+            <div class="media-card" data-category="advocacy breaking">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #C5A572, #A78A5A); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">1:47</div>
+                    <div class="views-badge">280K views</div>
+                </div>
+                <div class="card-info">
+                    <h4>"BODMAS WILL GO TO PRISON"</h4>
+                    <p>Cchristian D's viral statement • Feb 3, 2026</p>
+                    <div class="stats">
+                        <span><i class="fas fa-heart" style="color: #ff4444;"></i> 18K likes</span>
+                        <span><i class="fas fa-comment"></i> 1.1K comments</span>
+                        <span><i class="fas fa-share"></i> 1.2K shares</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- VIDEO 6: Sisters of Karowi Bala Appeal (Family) -->
+            <div class="media-card" data-category="family">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #2A4B7C, #1A3A6E); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">5:33</div>
+                </div>
+                <div class="card-info">
+                    <h4>SISTERS OF KAROWI BALA APPEAL TO TRUMP</h4>
+                    <p>"Please help us, President of United States of America"</p>
+                    <p style="margin-top: 10px; font-style: italic;">"We are suffering. We cannot eat. To feed is a problem. Please, Donald Trump, help us."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 7: Bodmas Hiding in Gbaramatu (Advocacy) -->
+            <div class="media-card" data-category="advocacy breaking">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #8B0000, #B22222); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">3:12</div>
+                    <div class="views-badge">470K views</div>
+                </div>
+                <div class="card-info">
+                    <h4>BODMAS HIDING IN GBARAMATU</h4>
+                    <p>48-hour ultimatum • Tompolo camp • Feb 2026</p>
+                    <p style="margin-top: 10px;">"We give Bodmas 48 hours to come out and submit himself to the police."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 8: Mother of Karowi Bala (Family) -->
+            <div class="media-card" data-category="family">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #4A2C2C, #2A1A1A); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">4:18</div>
+                </div>
+                <div class="card-info">
+                    <h4>MOTHER OF KAROWI BALA CRIES</h4>
+                    <p>"Where my pikin? Where my pikin dey?"</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 9: PA Testimony Part 2 (Testimony) -->
+            <div class="media-card" data-category="testimony">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #0A1F44, #051230); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">18:30</div>
+                </div>
+                <div class="card-info">
+                    <h4>EMMANUEL ABAROWE: THE JOURNEY</h4>
+                    <p>Part 2 - Warri hotel • Blindfolding • The compound</p>
+                    <p style="margin-top: 10px; font-style: italic;">"Bodmas say make dem blindfold us... I say this is becoming kidnapping..."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 10: Destiny - 3 Hours Torture (Testimony) -->
+            <div class="media-card" data-category="testimony">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #8B0000, #4A0000); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">12:45</div>
+                </div>
+                <div class="card-info">
+                    <h4>DESTINY: "THEY BEAT US FOR 3 HOURS"</h4>
+                    <p>Detailed account of torture at Bodmas compound</p>
+                    <p style="margin-top: 10px; font-style: italic;">"They picked up 2x3 plank and hit me on the head... he broke my head... I started bleeding..."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 11: Wife of Karowi - Second Interview (Family) -->
+            <div class="media-card" data-category="family">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #4A2C2C, #6B4A4A); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">6:50</div>
+                </div>
+                <div class="card-info">
+                    <h4>FETHI BALA: "THE CHILDREN NEED THEIR FATHER"</h4>
+                    <p>9 children waiting for their dad to come home</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 12: Press Statement (Breaking) -->
+            <div class="media-card" data-category="breaking">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #333, #111); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">2:01</div>
+                </div>
+                <div class="card-info">
+                    <h4>POLICE: BODMAS DECLARED WANTED</h4>
+                    <p>Bayelsa Police Command official statement • Feb 2026</p>
+                    <p style="margin-top: 10px; font-style: italic;">"Intelligence efforts have been activated to track him down."</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 13: Emmanuel Discovers Witness (Behind the Scenes) -->
+            <div class="media-card" data-category="advocacy">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #C5A572, #8B6B4A); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">5:22</div>
+                </div>
+                <div class="card-info">
+                    <h4>HOW THE WITNESS CAME FORWARD</h4>
+                    <p>Emmanuel Abarowe comments on viral video</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 14: Joshua Macaiver Background (Testimony) -->
+            <div class="media-card" data-category="testimony">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #0A1F44, #1A3A6E); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">7:33</div>
+                </div>
+                <div class="card-info">
+                    <h4>JOSHUA MACAIVER: CONVICTED KIDNAPPER</h4>
+                    <p>2004 Federal High Court conviction • Prison escape</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 15: Patrick's Family Speaks (Family) -->
+            <div class="media-card" data-category="family">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #4A2C2C, #2A1A1A); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">9:15</div>
+                </div>
+                <div class="card-info">
+                    <h4>PATRICK'S FAMILY: "WE WANT JUSTICE"</h4>
+                    <p>Family of Patrick Peresoudei speaks out</p>
+                </div>
+            </div>
+            
+            <!-- VIDEO 16: Court Filing Announcement (Breaking) -->
+            <div class="media-card" data-category="breaking">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #333, #111); position: relative;">
+                    <div class="play-overlay"></div>
+                    <div class="duration">3:45</div>
+                </div>
+                <div class="card-info">
+                    <h4>FUNDAMENTAL RIGHTS CASE FILED</h4>
+                    <p>Federal High Court, Abuja • March 7, 2025</p>
+                    <p>₦500 Billion damages sought</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FEATURED TESTIMONY SPOTLIGHT ===== -->
+<section style="background: var(--gradient-primary); padding: 60px 0; color: white;">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h3 style="color: white; font-size: 2.5rem;">FEATURED <span class="gold-text">TESTIMONY</span></h3>
+            <p style="font-size: 1.2rem;">Emmanuel Abarowe - The PA Who Witnessed Everything</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+            <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px;">
+                <div style="font-size: 1.5rem; margin-bottom: 20px;">🗣️</div>
+                <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"I am the direct living witness. I witness everything that happened, how e carry start and how the thing later carry end. That July 11th, 2024, around the hour of 3, thereabouts, this same Bodmas called me on the phone..."</p>
+                <div style="display: flex; gap: 15px;">
+                    <span><i class="fas fa-clock"></i> 15:42 min</span>
+                    <span><i class="fas fa-calendar"></i> Recorded Feb 2026</span>
+                </div>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px;">
+                <h4 style="color: white;">Key Moments:</h4>
+                <ul style="margin-top: 20px; list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 15px;">✓ The 3:00 PM call from Bodmas</li>
+                    <li style="margin-bottom: 15px;">✓ Two spies: Miebi and Tekena (ex-SARS)</li>
+                    <li style="margin-bottom: 15px;">✓ Arrival with 5 civil defence, 2 military</li>
+                    <li style="margin-bottom: 15px;">✓ Karowi's request to pray first</li>
+                    <li style="margin-bottom: 15px;">✓ "Carry am with force!" order</li>
+                    <li style="margin-bottom: 15px;">✓ Blindfolding in Warri</li>
+                    <li style="margin-bottom: 15px;">✓ The compound with Godfrey Pondi, Sam, Ebi</li>
+                    <li style="margin-bottom: 15px;">✓ Separation - never saw master again</li>
+                    <li style="margin-bottom: 15px;">✓ ₦50,000 silence money</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECOND FEATURED TESTIMONY ===== -->
+<section style="background: var(--gradient-secondary); padding: 60px 0; color: white;">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h3 style="color: white; font-size: 2.5rem;">FEATURED <span style="color: var(--primary);">TESTIMONY</span></h3>
+            <p style="font-size: 1.2rem;">Destiny Peresoudei - Brother of Patrick</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+            <div style="background: rgba(0,0,0,0.2); padding: 30px; border-radius: 20px;">
+                <h4 style="color: white;">Timeline of Events:</h4>
+                <ul style="margin-top: 20px; list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 15px;">⏰ <strong>5:44 AM Jan 15:</strong> Knock on gate - Bodmas' RX350</li>
+                    <li style="margin-bottom: 15px;">👮 <strong>6:00 AM:</strong> 4 civil defence arrive in Tundra</li>
+                    <li style="margin-bottom: 15px;">🏚️ <strong>7:00 AM:</strong> Taken to Bodmas compound</li>
+                    <li style="margin-bottom: 15px;">🔨 <strong>7-10 AM:</strong> 3 hours of torture, plank and machete</li>
+                    <li style="margin-bottom: 15px;">🚔 <strong>11 AM:</strong> Operation Puff Alder - no charges</li>
+                    <li style="margin-bottom: 15px;">😢 <strong>Jan 20:</strong> Patrick returned unable to talk/move</li>
+                    <li style="margin-bottom: 15px;">🏥 <strong>Jan 20-28:</strong> Hospital journey: Amasoma → Okolobu → FMC</li>
+                    <li style="margin-bottom: 15px;">🕊️ <strong>Jan 28:</strong> Patrick stopped breathing</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(0,0,0,0.2); padding: 30px; border-radius: 20px;">
+                <div style="font-size: 1.5rem; margin-bottom: 20px;">💔</div>
+                <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"They threw my brother to me. He couldn't talk. He couldn't raise his hand. He couldn't raise his leg. I tried to arrange his body, balance him, rest him on my chest. That was January 20th. By January 28th, he stopped breathing."</p>
+                <div style="display: flex; gap: 15px;">
+                    <span><i class="fas fa-clock"></i> 22:15 min</span>
+                    <span><i class="fas fa-calendar"></i> Recorded Feb 2026</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAMILY PLEAS COMPILATION ===== -->
+<section style="padding: 60px 0;">
+    <div class="container">
+        <h3 style="text-align: center; margin-bottom: 40px;">FAMILY <span class="gold-text">PLEAS</span></h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            
+            <div style="background: var(--light); padding: 25px; border-radius: 15px;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">👩</div>
+                <h4>FETHI BALA (Wife of Karowi)</h4>
+                <p style="font-style: italic;">"They came on the 11th of July towards evening time. They said that Tompolo sent Bodmas to kidnap my husband. We don't know where he is now. We don't have his phone number. For a large family like this, 9 children, we don't know how to cope."</p>
+            </div>
+            
+            <div style="background: var(--light); padding: 25px; border-radius: 15px;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">👧</div>
+                <h4>SISTER OF KAROWI BALA</h4>
+                <p style="font-style: italic;">"Ever since Tompolo sent his boys to come and kidnap my uncle, we don't know his whereabouts. Even the governor is aware but is not doing anything. We are suffering. We cannot eat. To feed is a problem."</p>
+            </div>
+            
+            <div style="background: var(--light); padding: 25px; border-radius: 15px;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">👩‍🦰</div>
+                <h4>SECOND SISTER OF KAROWI</h4>
+                <p style="font-style: italic;">"Please, Donald Trump, I am calling on you. Help me to look for my husband. The president is not doing anything. The governor is not doing anything. My children and I, we are suffering."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ADVOCACY HIGHLIGHTS ===== -->
+<section style="background: var(--light); padding: 60px 0;">
+    <div class="container">
+        <h3 style="text-align: center; margin-bottom: 40px;">ADVOCACY <span class="gold-text">HIGHLIGHTS</span></h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px;">
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 2rem; margin-bottom: 10px;">📢</div>
+                <h4>Feb 3, 2026</h4>
+                <p>"Bodmas will go to prison"</p>
+                <p style="color: var(--secondary);">280K views</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 2rem; margin-bottom: 10px;">⏰</div>
+                <h4>Feb 5, 2026</h4>
+                <p>48-Hour Ultimatum</p>
+                <p style="color: var(--secondary);">470K views</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 2rem; margin-bottom: 10px;">🗣️</div>
+                <h4>Feb 6, 2026</h4>
+                <p>Witnesses Come Forward</p>
+                <p style="color: var(--secondary);">Emmanuel & Destiny</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 2rem; margin-bottom: 10px;">⚖️</div>
+                <h4>March 7, 2025</h4>
+                <p>Court Case Filed</p>
+                <p style="color: var(--secondary);">FHC Abuja</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== YOUTUBE/TIKTOK CHANNELS ===== -->
+<section style="padding: 40px 0;">
+    <div class="container">
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <a href="#" style="background: #ff0000; color: white; padding: 15px 40px; border-radius: 50px; display: inline-flex; align-items: center; gap: 10px; font-weight: 600;">
+                <i class="fab fa-youtube" style="font-size: 1.5rem;"></i> SUBSCRIBE ON YOUTUBE
+            </a>
+            <a href="#" style="background: #000000; color: white; padding: 15px 40px; border-radius: 50px; display: inline-flex; align-items: center; gap: 10px; font-weight: 600;">
+                <i class="fab fa-tiktok" style="font-size: 1.5rem;"></i> FOLLOW ON TIKTOK
+            </a>
+            <a href="#" style="background: #1877f2; color: white; padding: 15px 40px; border-radius: 50px; display: inline-flex; align-items: center; gap: 10px; font-weight: 600;">
+                <i class="fab fa-facebook" style="font-size: 1.5rem;"></i> FOLLOW ON FACEBOOK
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section style="background: var(--gradient-secondary); padding: 60px 0; color: white; text-align: center;">
+    <div class="container">
+        <h3 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">WATCH. LISTEN. SHARE.</h3>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px;">These testimonies must be seen by the world. Share them widely.</p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="petition.html" class="btn-primary" style="background: white; color: var(--primary);">✍️ SIGN PETITION</a>
+            <a href="contact.html" class="btn-secondary" style="border-color: white; color: white;">📢 SHARE YOUR STORY</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="premium-footer">
+    <div class="footer-grid">
+        <div class="footer-about">
+            <h3>VOICE OF JUSTICE <span class="gold-text">NIGERIA</span></h3>
+            <p>Speaking for the voiceless. Demanding accountability. Pursuing truth.</p>
+            <p>Led by Prince Abisoye Emmanuel</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <h4>EXPLORE</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="patrick-case.html">Patrick Case</a></li>
+                <li><a href="karowi-case.html">Karowi Bala Case</a></li>
+                <li><a href="court-documents.html">Court Documents</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            <h4>ACTION</h4>
+            <ul>
+                <li><a href="petition.html">Sign Petition</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Report a Case</a></li>
+                <li><a href="media-hub.html">Media Hub</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-legal">
+            <h4>LEGAL</h4>
+            <p>All accused persons are presumed innocent until proven otherwise in a court of law. Information presented is based on testimonies, court filings, and public records.</p>
+            <a href="legal-disclaimer.html">Full Disclaimer</a>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 Voice of Justice Nigeria. All rights reserved. | cchristiand.org</p>
+        <p>Justice delayed is justice denied.</p>
+    </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Media filter function
+    function filterMedia(category) {
+        const cards = document.querySelectorAll('.media-card');
+        const filters = document.querySelectorAll('.filter');
+        
+        // Update active filter
+        filters.forEach(filter => {
+            if (filter.textContent.trim().toLowerCase().includes(category) || (category === 'all' && filter.textContent.trim() === 'ALL VIDEOS')) {
+                filter.classList.add('active');
+            } else {
+                filter.classList.remove('active');
+            }
+        });
+        
+        // Filter cards
+        cards.forEach(card => {
+            if (category === 'all') {
+                card.style.display = 'block';
+            } else {
+                const categories = card.getAttribute('data-category').split(' ');
+                if (categories.includes(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
