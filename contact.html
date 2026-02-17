@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Secure Reporting - Voice of Justice Nigeria</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <div class="logo-text">VOICE OF JUSTICE<br><span>NIGERIA</span></div>
+        </div>
+        
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="patrick-case.html">Patrick Case</a>
+            <a href="karowi-case.html">Karowi Bala</a>
+            <a href="court-documents.html">Documents</a>
+            <a href="media-hub.html">Media</a>
+            <a href="petition.html">Petition</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section style="background: var(--gradient-primary); padding: 120px 0 60px; color: white; text-align: center;">
+    <div class="container">
+        <h1 style="color: white; font-size: 3.5rem;">SECURE <span class="gold-text">CONTACT</span></h1>
+        <p style="font-size: 1.3rem; max-width: 700px; margin: 20px auto;">Confidential • Protected • Anonymous Options Available</p>
+        <div style="background: rgba(255,255,255,0.1); padding: 10px 25px; border-radius: 50px; display: inline-block; margin-top: 20px;">
+            <i class="fas fa-shield-alt"></i> Whistleblower Protection Guaranteed
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT PORTAL ===== -->
+<section class="contact-portal" style="padding: 60px 0;">
+    <div class="container">
+        <div class="portal-grid">
+            <!-- LEFT SIDE - CONTACT FORM -->
+            <div class="portal-form">
+                <h3 style="color: var(--primary); margin-bottom: 30px;">📝 SEND A SECURE MESSAGE</h3>
+                
+                <form id="secureContactForm" onsubmit="return submitContactForm(event)">
+                    <!-- Name Field (Optional for anonymous) -->
+                    <div class="form-group">
+                        <label for="contactName">Name <span style="color: var(--gray); font-weight: normal;">(Optional for anonymous)</span></label>
+                        <input type="text" id="contactName" placeholder="Leave blank for anonymous">
+                    </div>
+                    
+                    <!-- Contact Method -->
+                    <div class="form-group">
+                        <label for="contactMethod">Contact Method <span style="color: var(--gray); font-weight: normal;">(Optional)</span></label>
+                        <input type="text" id="contactMethod" placeholder="Email / Phone / Signal / WhatsApp">
+                        <small style="color: var(--gray);">How can we reach you if needed?</small>
+                    </div>
+                    
+                    <!-- Type of Report -->
+                    <div class="form-group">
+                        <label for="reportType">Type of Report *</label>
+                        <select id="reportType" required>
+                            <option value="">Select one</option>
+                            <option value="missing">Missing Person</option>
+                            <option value="detention">Unlawful Detention</option>
+                            <option value="abuse">Security Agency Abuse</option>
+                            <option value="torture">Torture Allegation</option>
+                            <option value="evidence">Submit Evidence</option>
+                            <option value="witness">Witness Testimony</option>
+                            <option value="other">Other Human Rights Violation</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" placeholder="Brief summary" required>
+                    </div>
+                    
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Your Message / Information *</label>
+                        <textarea id="message" rows="6" placeholder="Please provide as much detail as possible..." required></textarea>
+                    </div>
+                    
+                    <!-- File Upload -->
+                    <div class="form-group">
+                        <label>Attach Evidence <span style="color: var(--gray); font-weight: normal;">(Optional)</span></label>
+                        <div class="file-upload">
+                            <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.pdf,.mp4,.mp3,.txt">
+                            <label for="fileInput" class="file-label"><i class="fas fa-cloud-upload-alt"></i> Choose Files</label>
+                            <span class="file-note">Photos, videos, documents, audio accepted (Max 25MB)</span>
+                            <div id="fileList" style="margin-top: 15px; text-align: left;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Anonymous Checkbox -->
+                    <div class="form-group checkbox">
+                        <label>
+                            <input type="checkbox" id="anonymousCheck"> <strong>Check if you want to remain completely anonymous</strong>
+                        </label>
+                        <small style="color: var(--gray); display: block; margin-top: 5px;">If checked, we will not store any identifying information.</small>
+                    </div>
+                    
+                    <!-- Consent Checkbox -->
+                    <div class="form-group checkbox">
+                        <label>
+                            <input type="checkbox" id="consentCheck" required> I understand this information may be used for advocacy and legal purposes *
+                        </label>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-primary btn-block" style="padding: 15px;">
+                        <i class="fas fa-lock"></i> SUBMIT SECURELY
+                    </button>
+                </form>
+                
+                <!-- Encryption Notice -->
+                <div style="margin-top: 20px; text-align: center; font-size: 0.8rem; color: var(--gray);">
+                    <i class="fas fa-lock" style="color: var(--secondary);"></i> End-to-end encrypted • Your privacy is protected
+                </div>
+            </div>
+            
+            <!-- RIGHT SIDE - CONTACT INFO & WHISTLEBLOWER PROTECTION -->
+            <div class="portal-info">
+                <!-- Whistleblower Protection Card -->
+                <div class="info-card protection">
+                    <i class="fas fa-shield-alt" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <h4 style="color: white;">🔐 WHISTLEBLOWER PROTECTION</h4>
+                    <p>All submissions are confidential. Identity never disclosed without explicit consent. Secure encryption protects your information.</p>
+                    <ul style="margin-top: 15px; padding-left: 20px;">
+                        <li>✅ Anonymous reporting available</li>
+                        <li>✅ No IP logging</li>
+                        <li>✅ Encrypted storage</li>
+                        <li>✅ Legal protection for whistleblowers</li>
+                    </ul>
+                </div>
+                
+                <!-- Direct Contact Methods -->
+                <div class="info-card">
+                    <h4 style="color: var(--primary);">📱 DIRECT CONTACT</h4>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; padding: 10px; background: var(--light); border-radius: 10px;">
+                        <div style="width: 40px; height: 40px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;">WhatsApp</p>
+                            <p style="color: var(--gray);">+234 800 000 0000</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; padding: 10px; background: var(--light); border-radius: 10px;">
+                        <div style="width: 40px; height: 40px; background: #0088cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;">Telegram</p>
+                            <p style="color: var(--gray);">@VoiceOfJusticeNG</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; padding: 10px; background: var(--light); border-radius: 10px;">
+                        <div style="width: 40px; height: 40px; background: #00C853; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;">Signal</p>
+                            <p style="color: var(--gray);">+234 800 000 0000</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px; padding: 10px; background: var(--light); border-radius: 10px;">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p style="font-weight: 600;">Email</p>
+                            <p style="color: var(--gray);">justice@cchristiand.org</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emergency Notice -->
+                <div class="info-card" style="border-left: 4px solid var(--accent);">
+                    <h4 style="color: var(--primary);">⚠️ IMPORTANT</h4>
+                    <p style="color: var(--gray);">If you are in immediate danger, contact local authorities first. This platform is for documentation and advocacy.</p>
+                    <p style="margin-top: 10px; font-weight: 600; color: var(--accent);">Emergency: 112 or 199</p>
+                </div>
+                
+                <!-- Office Address -->
+                <div class="info-card">
+                    <h4 style="color: var(--primary);">📍 OFFICE ADDRESS</h4>
+                    <p style="color: var(--gray);">Suite C007, Quad Plaza<br>Ameh Ebute Street, Wuye<br>Abuja, Nigeria</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-clock" style="color: var(--secondary);"></i> By appointment only</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== REPORT A CASE SECTION ===== -->
+<section style="background: var(--light); padding: 60px 0;">
+    <div class="container">
+        <div class="section-header">
+            <h2>REPORT A <span class="gold-text">CASE</span></h2>
+            <div class="header-line"></div>
+            <p>Help us document human rights violations across Nigeria</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+            
+            <!-- Missing Person -->
+            <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">👤</div>
+                <h4>Missing Person</h4>
+                <p style="color: var(--gray); margin: 15px 0;">Report a disappeared family member or friend</p>
+                <a href="#secureContactForm" class="btn-outline-small" onclick="setReportType('missing')">REPORT NOW</a>
+            </div>
+            
+            <!-- Unlawful Detention -->
+            <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">🔒</div>
+                <h4>Unlawful Detention</h4>
+                <p style="color: var(--gray); margin: 15px 0;">Report illegal arrest or private detention</p>
+                <a href="#secureContactForm" class="btn-outline-small" onclick="setReportType('detention')">REPORT NOW</a>
+            </div>
+            
+            <!-- Security Abuse -->
+            <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">👮</div>
+                <h4>Security Agency Abuse</h4>
+                <p style="color: var(--gray); margin: 15px 0;">Report misconduct by police, military, or civil defence</p>
+                <a href="#secureContactForm" class="btn-outline-small" onclick="setReportType('abuse')">REPORT NOW</a>
+            </div>
+            
+            <!-- Torture -->
+            <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">⚠️</div>
+                <h4>Torture</h4>
+                <p style="color: var(--gray); margin: 15px 0;">Report physical abuse or inhuman treatment</p>
+                <a href="#secureContactForm" class="btn-outline-small" onclick="setReportType('torture')">REPORT NOW</a>
+            </div>
+            
+            <!-- Submit Evidence -->
+            <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">📎</div>
+                <h4>Submit Evidence</h4>
+                <p style="color: var(--gray); margin: 15px 0;">Upload photos, videos, documents securely</p>
+                <a href="#secureContactForm" class="btn-outline-small" onclick="setReportType('evidence')">SUBMIT</a>
+            </div>
+            
+            <!-- Witness Testimony -->
+            <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">🗣️</div>
+                <h4>Witness Testimony</h4>
+                <p style="color: var(--gray); margin: 15px 0;">Share what you saw - protect identity</p>
+                <a href="#secureContactForm" class="btn-outline-small" onclick="setReportType('witness')">SHARE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOW WE PROTECT YOU ===== -->
+<section style="padding: 60px 0;">
+    <div class="container">
+        <h3 style="text-align: center; margin-bottom: 40px;">HOW WE PROTECT <span class="gold-text">YOU</span></h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px;">
+            
+            <div style="text-align: center;">
+                <div style="width: 80px; height: 80px; background: var(--light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: var(--secondary);">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <h4>Anonymous Reporting</h4>
+                <p style="color: var(--gray);">No name required. No IP logging.</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <div style="width: 80px; height: 80px; background: var(--light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: var(--secondary);">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h4>End-to-End Encryption</h4>
+                <p style="color: var(--gray);">All communications are encrypted</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <div style="width: 80px; height: 80px; background: var(--light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: var(--secondary);">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>Legal Protection</h4>
+                <p style="color: var(--gray);">Whistleblower rights respected</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <div style="width: 80px; height: 80px; background: var(--light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: var(--secondary);">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+                <h4>Right to Delete</h4>
+                <p style="color: var(--gray);">Request data removal anytime</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SUBMISSION GUIDELINES ===== -->
+<section style="background: var(--light); padding: 60px 0;">
+    <div class="container">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-lg);">
+            <h3 style="text-align: center; margin-bottom: 30px;">📋 SUBMISSION <span class="gold-text">GUIDELINES</span></h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                
+                <div>
+                    <h4 style="color: var(--primary); margin-bottom: 15px;">DO PROVIDE:</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Dates and times of incidents</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Names of individuals involved</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Locations (specific as possible)</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Photos, videos, documents</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Witness contact (if willing)</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--primary); margin-bottom: 15px;">AVOID:</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-times-circle" style="color: var(--accent); margin-right: 10px;"></i> Speculation without facts</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-times-circle" style="color: var(--accent); margin-right: 10px;"></i> Personal information of others</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-times-circle" style="color: var(--accent); margin-right: 10px;"></i> Threats or abusive language</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-times-circle" style="color: var(--accent); margin-right: 10px;"></i> Multiple duplicate submissions</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-times-circle" style="color: var(--accent); margin-right: 10px;"></i> Sharing others' private data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FREQUENTLY ASKED QUESTIONS ===== -->
+<section style="padding: 60px 0;">
+    <div class="container">
+        <h3 style="text-align: center; margin-bottom: 40px;">FREQUENTLY ASKED <span class="gold-text">QUESTIONS</span></h3>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow-sm);">
+                <h4 style="color: var(--primary);">Is my identity really protected?</h4>
+                <p style="color: var(--gray);">Yes. If you check the anonymous option, we do not store your name, IP address, or any identifying information. All submissions are encrypted.</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow-sm);">
+                <h4 style="color: var(--primary);">What happens after I submit?</h4>
+                <p style="color: var(--gray);">Our legal team reviews submissions. If the information is relevant to active cases, it may be used in court filings or advocacy. You will only be contacted if you provided contact details.</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow-sm);">
+                <h4 style="color: var(--primary);">Can I submit evidence anonymously?</h4>
+                <p style="color: var(--gray);">Absolutely. Use the anonymous option and do not include identifying information in your files. We recommend removing metadata from photos before uploading.</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow-sm);">
+                <h4 style="color: var(--primary);">What if I'm afraid to come forward?</h4>
+                <p style="color: var(--gray);">We understand. Many witnesses are afraid. That's why we offer multiple anonymous channels including WhatsApp, Signal, and Telegram. Your safety is our priority.</p>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow-sm);">
+                <h4 style="color: var(--primary);">Do you pay for information?</h4>
+                <p style="color: var(--gray);">No. We do not pay for testimonies or evidence. We are a non-profit advocacy platform committed to justice, not a commercial enterprise.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== OTHER WAYS TO HELP ===== -->
+<section style="background: var(--gradient-secondary); padding: 60px 0; color: white; text-align: center;">
+    <div class="container">
+        <h3 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">OTHER WAYS TO HELP</h3>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px;">Not ready to submit? You can still support the cause.</p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="petition.html" class="btn-primary" style="background: white; color: var(--primary);">✍️ SIGN PETITION</a>
+            <a href="#" onclick="showDonateOptions(); return false;" class="btn-secondary" style="border-color: white; color: white;">💰 DONATE</a>
+            <a href="volunteer.html" class="btn-secondary" style="border-color: white; color: white;">🤝 VOLUNTEER</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="premium-footer">
+    <div class="footer-grid">
+        <div class="footer-about">
+            <h3>VOICE OF JUSTICE <span class="gold-text">NIGERIA</span></h3>
+            <p>Speaking for the voiceless. Demanding accountability. Pursuing truth.</p>
+            <p>Led by Prince Abisoye Emmanuel</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <h4>EXPLORE</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="patrick-case.html">Patrick Case</a></li>
+                <li><a href="karowi-case.html">Karowi Bala Case</a></li>
+                <li><a href="court-documents.html">Court Documents</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            <h4>ACTION</h4>
+            <ul>
+                <li><a href="petition.html">Sign Petition</a></li>
+                <li><a href="#" onclick="showDonateOptions(); return false;">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Report a Case</a></li>
+                <li><a href="media-hub.html">Media Hub</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-legal">
+            <h4>LEGAL</h4>
+            <p>All accused persons are presumed innocent until proven otherwise in a court of law. Information presented is based on testimonies, court filings, and public records.</p>
+            <a href="legal-disclaimer.html">Full Disclaimer</a>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 Voice of Justice Nigeria. All rights reserved. | cchristiand.org</p>
+        <p>Justice delayed is justice denied.</p>
+    </div>
+</footer>
+
+<!-- ===== DONATION MODAL (Reused from petition page) ===== -->
+<div id="donateModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center;">
+    <div style="background: white; max-width: 500px; width: 90%; padding: 40px; border-radius: 20px; position: relative;">
+        <button onclick="closeDonateModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5rem; cursor: pointer;">&times;</button>
+        
+        <h3 style="color: var(--primary); margin-bottom: 20px;">SUPPORT THE <span class="gold-text">FAMILIES</span></h3>
+        
+        <div style="margin-bottom: 30px;">
+            <p style="margin-bottom: 15px;">Your donation will go directly to:</p>
+            <ul style="margin-bottom: 20px; padding-left: 20px;">
+                <li>👨‍👩‍👧‍👦 Karowi Bala's 9 children (food, school fees, medical)</li>
+                <li>💔 Patrick Peresoudei's family (funeral expenses, support)</li>
+                <li>⚖️ Legal fees for ongoing court case</li>
+                <li>📢 Advocacy and awareness campaigns</li>
+            </ul>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px;">
+            <button onclick="selectAmount(10000)" style="padding: 15px; background: var(--light); border: 2px solid var(--light); border-radius: 10px; font-weight: 600; cursor: pointer;">₦10,000</button>
+            <button onclick="selectAmount(25000)" style="padding: 15px; background: var(--light); border: 2px solid var(--light); border-radius: 10px; font-weight: 600; cursor: pointer;">₦25,000</button>
+            <button onclick="selectAmount(50000)" style="padding: 15px; background: var(--light); border: 2px solid var(--light); border-radius: 10px; font-weight: 600; cursor: pointer;">₦50,000</button>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label for="customAmount">Custom Amount (₦)</label>
+            <input type="number" id="customAmount" style="width: 100%; padding: 15px; border: 2px solid var(--light); border-radius: 10px; margin-top: 5px;" placeholder="Enter amount">
+        </div>
+        
+        <button onclick="processDonation()" style="width: 100%; padding: 15px; background: var(--gradient-secondary); color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer;">
+            <i class="fas fa-heart"></i> DONATE NOW
+        </button>
+        
+        <p style="text-align: center; margin-top: 20px; font-size: 0.8rem; color: var(--gray);">100% of donations go to the families and legal fund</p>
+    </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Set report type from quick action buttons
+    function setReportType(type) {
+        const select = document.getElementById('reportType');
+        if (select) {
+            if (type === 'missing') select.value = 'missing';
+            if (type === 'detention') select.value = 'detention';
+            if (type === 'abuse') select.value = 'abuse';
+            if (type === 'torture') select.value = 'torture';
+            if (type === 'evidence') select.value = 'evidence';
+            if (type === 'witness') select.value = 'witness';
+        }
+        
+        // Scroll to form
+        document.getElementById('secureContactForm').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // File upload handling
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+        const fileList = document.getElementById('fileList');
+        fileList.innerHTML = '';
+        
+        const files = e.target.files;
+        for (let i = 0; i < files.length; i++) {
+            fileList.innerHTML += `<div style="background: var(--light); padding: 5px 10px; margin: 5px 0; border-radius: 5px;"><i class="fas fa-file"></i> ${files[i].name} (${(files[i].size/1024/1024).toFixed(2)} MB)</div>`;
+        }
+    });
+
+    // Contact form submission
+    function submitContactForm(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('contactName').value || 'Anonymous';
+        const reportType = document.getElementById('reportType').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        const anonymous = document.getElementById('anonymousCheck').checked;
+        
+        if (!reportType || !subject || !message) {
+            alert('Please fill in all required fields');
+            return false;
+        }
+        
+        let successMessage = anonymous ? 
+            'Thank you for your anonymous submission. Your identity is protected.' :
+            `Thank you ${name} for your submission. Our team will review it.`;
+        
+        alert(successMessage);
+        document.getElementById('secureContactForm').reset();
+        document.getElementById('fileList').innerHTML = '';
+        return false;
+    }
+
+    // Donation functions
+    function showDonateOptions() {
+        document.getElementById('donateModal').style.display = 'flex';
+    }
+    
+    function closeDonateModal() {
+        document.getElementById('donateModal').style.display = 'none';
+    }
+    
+    function selectAmount(amount) {
+        document.getElementById('customAmount').value = amount;
+    }
+    
+    function processDonation() {
+        const amount = document.getElementById('customAmount').value;
+        if (!amount || amount < 1000) {
+            alert('Please enter a valid amount (minimum ₦1,000)');
+            return;
+        }
+        alert(`Thank you for your donation of ₦${parseInt(amount).toLocaleString()}! Your support means everything to the families.`);
+        closeDonateModal();
+    }
+    
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        const modal = document.getElementById('donateModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
